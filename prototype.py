@@ -35,7 +35,7 @@ def save_data(params: Data):
 
 key = os.getenv("GEMINI_API_KEY")
 
-username = ""
+username = "iqthegoat"
 
 
 
@@ -43,12 +43,12 @@ async def username_searcher(username:str):
    
 
 
-   sites = search_username(username)
+   #sites = search_username(username)
 
    
    TASK = f"""
-You are given a list of websites associated with a single individual: {sites}.
-For each website that is accessible, perform the following steps:
+    this is the username of the target {username} go to https://whatsmyname.app/ search the username.
+    then For each website that is accessible, perform the following steps:
 
     Visit and Analyze: Navigate to the website and thoroughly examine all available content.
 
@@ -96,7 +96,7 @@ For each website that is accessible, perform the following steps:
    await agent.run(max_steps=1000)
 
 
-def search_username(username="iqthegoat"):
+def search_username(username=""):
     if not username:
         return []
 
