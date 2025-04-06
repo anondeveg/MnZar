@@ -1,0 +1,5 @@
+.env
+/maigret
+*.txt
+*.json
+venv
